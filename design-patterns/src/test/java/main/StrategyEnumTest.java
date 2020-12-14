@@ -13,7 +13,6 @@ import org.junit.Test;
 public class StrategyEnumTest {
     @Test
     public void test0001(){
-        PayEnum.values();
         Customer customer = new Customer(PayEnum.getPayEnum("ali"));
         customer.buy();
     }

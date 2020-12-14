@@ -16,22 +16,23 @@ import java.util.Map;
 public enum PayEnum {
     ALI_PAY("ali") {
         @Override
-        public void pay() {
-            log.info("使用支付宝支付,支付金额20元");
+        public void pay(PayTypeService payTypeService) {
+            payTypeService.payWithAli();
         }
     },
     WE_CHAT_PAY("weChat") {
         @Override
-        public void pay() {
-            log.info("使用微信支付,支付金额20元");
+        public void pay(PayTypeService payTypeService) {
+            payTypeService.payWithWeChat();
         }
     };
     private String payType;
 
     /**
-     * 支付方法
+     * 支付方法 将具体的支付逻辑封装到一个service中
+     * @param payTypeService
      */
-    public void pay() {
+    public void pay(PayTypeService payTypeService) {
         throw new NoPayTypeException();
     }
 
