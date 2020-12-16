@@ -1,9 +1,9 @@
 package main;
 
-import main.templete.AbstractGame;
-import main.templete.BasketBallGame;
-import main.templete.FootBallGame;
-import main.templete.Player;
+import main.template.AbstractGame;
+import main.template.BasketBallGame;
+import main.template.FootBallGame;
+import main.template.Player;
 import org.junit.Test;
 
 /**
@@ -17,7 +17,7 @@ import org.junit.Test;
  * 该类的refresh方法就是一个模板方法，也是由具体方法、抽象方法、钩子方法组成
  * @Date: 2020-12-16
  **/
-public class TempleteTest {
+public class TemplateTest {
     @Test
     public void test0001(){
         Player player = new Player("Hello", 0);
