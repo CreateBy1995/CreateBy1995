@@ -1,6 +1,5 @@
 package main;
 
-import main.annotations.EnableAutoProxy;
 import main.dao.TestDao;
 import main.domain.Test;
 import org.mybatis.spring.annotation.MapperScan;
@@ -18,7 +17,6 @@ import java.util.List;
  **/
 @SpringBootApplication
 @MapperScan("main.dao")
-@EnableAutoProxy("main.demo")
 public class MainApplication {
     public static void main(String[] args) {
         ConfigurableApplicationContext context = SpringApplication.run(MainApplication.class);

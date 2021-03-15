@@ -1,0 +1,13 @@
+syntax = "proto3";
+option java_package = "";
+option java_outer_classname = "Persons";
+message Women {
+      int32 id = 1;
+      string name = 2;
+      int32 age = 3;
+ }
+ message Man{
+    int32 id = 1;
+    string name = 2;
+    int32 age = 3;
+ }

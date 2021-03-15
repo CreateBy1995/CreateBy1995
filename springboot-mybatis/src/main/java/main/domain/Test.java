@@ -12,5 +12,4 @@ public class Test {
     private Integer test1;
     private Integer test2;
     private Integer test3;
-
 }
